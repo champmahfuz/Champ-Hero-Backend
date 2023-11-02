@@ -12,6 +12,6 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use('/v1', routes_1.default);
 app.get('/', (req, res) => {
-    res.send('Teaching Torch backend started');
+    res.send('Champ Hero backend started');
 });
 exports.default = app;

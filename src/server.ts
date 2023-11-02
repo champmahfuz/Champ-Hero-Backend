@@ -1,18 +1,18 @@
-import mongoose from 'mongoose';
-import app from './app';
-import config from './config';
+import mongoose from "mongoose";
+import app from "./app";
+import config from "./config";
 
-const port:number = 9000
+const port: number = 9000;
 
 async function main() {
   try {
     await mongoose.connect(config.database_url as string);
-    console.log('Database connection successful')
+    console.log("Database connection successful");
     app.listen(port, () => {
-      console.log(`Teaching server is listening on port ${port}`)
-    })
+      console.log(`Champ is listening on port ${port}`);
+    });
   } catch (error) {
-    console.log('database connection failed', error)
+    console.log("database connection failed", error);
   }
 }
-main()
+main();

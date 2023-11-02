@@ -22,7 +22,7 @@ function main() {
             yield mongoose_1.default.connect(config_1.default.database_url);
             console.log('Database connection successful');
             app_1.default.listen(port, () => {
-                console.log(`Teaching server is listening on port ${port}`);
+                console.log(`Champ is listening on port ${port}`);
             });
         }
         catch (error) {

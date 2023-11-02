@@ -1,7 +1,6 @@
 import { Schema, model } from "mongoose";
 import IProduct from "./product.interface";
 
-
 export const ProductSchema = new Schema<IProduct>({
   title: { type: String, required: true },
   instructors: [{ type: String }],
@@ -16,4 +15,6 @@ export const ProductSchema = new Schema<IProduct>({
   reviews: [{ type: String }],
 });
 
-export const Product = model<IProduct>('Product', ProductSchema);
+export const Product = model<IProduct>("Product", ProductSchema);
+
+// gdbd1971@gmail.com
